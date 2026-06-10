@@ -1,0 +1,33 @@
+<html>
+<head>
+    <h1 style="color:darkblue;">
+        When you click a button it will change the HTML paragraph and update the text from textbox
+    </h1>
+
+    <p id="display">
+        Technology is the exploration of scientific knowledge to develop tools and techniques
+        to transform the world by improving efficiency in almost everything we do. The new
+        technological inventions are changing the age dramatically, society and environment.
+    </p>
+
+    <script language="JavaScript">
+        function showMessage()
+        {
+            var message = document.getElementById("text").value;
+
+            document.getElementById("display").innerHTML =
+                "you entered: " + message;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Enter a text:
+        <input type="text" name="message" id="text">
+    </form>
+
+    <input type="submit" onClick="showMessage();">
+    <br/>
+</body>
+</html>

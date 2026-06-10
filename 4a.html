@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: pink;
+    }
+
+    p {
+        color: blue;
+    }
+
+    h2 {
+        color: red;
+    }
+
+    h1 {
+        color: brown;
+    }
+
+    .btn {
+        background-color: #FF123f;
+        color: whitesmoke;
+        font-size: 25px;
+        width: 100px;
+        height: 40px;
+    }
+</style>
+
+<body style="margin: 30px">
+    <h1 style="color: green;">
+        DOCUMENT OBJECT MODEL (DOM)
+    </h1>
+
+    <h2>
+        Multiplication and Division, using Javascript
+    </h2>
+
+    <form>
+        <b>Enter 1st number:</b>
+        <input type="text" id="firstNumber" />
+        <hr>
+
+        <b>Enter 2nd number:</b>
+        <input type="text" id="SecondNumber">
+        <br>
+
+        <input
+            type="button"
+            onClick="multiplyBy()"
+            value="MULTIPLY"
+            class="btn" />
+
+        <input
+            type="button"
+            onclick="divide()"
+            value="DIVIDE"
+            class="btn" />
+    </form>
+
+    <h2>
+        <p>The result is</p>
+    </h2>
+
+    <h1>
+        <span id="result"></span>
+    </h1>
+
+    <p></p>
+
+    <script>
+        function multiplyBy()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("SecondNumber").value;
+
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function divide()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("SecondNumber").value;
+
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+    </script>
+
+</body>
+</html>

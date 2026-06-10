@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title> DROP DOWN LISTS</title>
+</head>
+<BODY style="font-family: sans-serif">
+<fieldset>
+<legend>Combo box</legend>   
+    Enter Text: <input type="text" id = "txtText" />
+ <input type="button" id = "btnAdd" value = "Add" />
+ <select id = "combo"></select>   
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnAdd").click(function () {
+                var option = $("<option />");
+                option.html($("#txtText").val());
+                   $("#combo").append(option);
+            });
+        });
+    </script>
+</fieldset>
+</BODY>
+</html>

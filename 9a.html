@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <title>Disable a link using jQuery</title>
+</head>
+
+<center>
+    <h1 style="color:green;">
+        WELCOME TO INDIA
+    </h1>
+
+    <body style="background-color: #FF474C;">
+        <h2>
+            <a href="https://www.google.com">
+                google search engine
+            </a>
+        </h2>
+
+        <p></p>
+
+        <input
+            id="button1"
+            type="button"
+            value="Click to disable the link!"
+            style="color:blue; font-size: 20px; font-weight: bold;" />
+    </body>
+</center>
+
+<script>
+    $(document).ready(function() {
+        $('#button1').click(function() {
+            $("a").removeAttr('href');
+
+            alert('link disabled');
+        });
+    });
+</script>
+</html>

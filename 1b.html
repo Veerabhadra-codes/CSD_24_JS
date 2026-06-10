@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function start(str)
+        {
+            document.write(str + "-->");
+
+            if(str.length < 4)
+            {
+                return false;
+            }
+
+            front = str.substring(0, 4);
+
+            if(front == 'java')
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        document.write(start("javascript"));
+        document.write("<br>");
+
+        document.write(start("java"));
+        document.write("<br>");
+
+        document.write(start("python"));
+        document.write("<br>");
+
+        document.write(start("c++"));
+    </script>
+</body>
+</html>

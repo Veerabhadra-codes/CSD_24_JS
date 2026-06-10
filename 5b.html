@@ -1,0 +1,28 @@
+<html>
+<body>
+    <h3 id="center">
+        Checking the href attribute on button click
+    </h3>
+
+    <a href="https://www.google.com">
+        welcome to google website
+    </a>
+
+    <br>
+    <br>
+
+    <button onclick="samplefunction()">
+        Click here
+    </button>
+
+    <script>
+        function samplefunction()
+        {
+            var url = document.querySelector("a");
+
+            url.href = "https://ibighit.com/ko/main";
+            url.textContent = "My bts girl <3, Click me";
+        }
+    </script>
+</body>
+</html>

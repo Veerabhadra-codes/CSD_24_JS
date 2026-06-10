@@ -1,0 +1,39 @@
+<html>
+<body>
+    <h1>JavaScript Object Literals & Constructors</h1>
+
+    <script>
+        const hotel = [
+            { name: "John", location: "Bengaluru", rr: 5500, discount: 20 },
+            { name: "James", location: "Goa", rr: 6000, discount: 20 },
+            { name: "Zaevika", location: "TamilNadu", rr: 500, discount: 5 },
+            { name: "Alok", location: "Telangana", rr: 3500, discount: 25 }
+        ];
+
+        function hot(P)
+        {
+            this.name = P.name;
+            this.location = P.location;
+            this.rr = P.rr;
+            this.discount = P.discount;
+        }
+
+        for (let i = 0; i < hotel.length; i++)
+        {
+            const v1 = new hot(hotel[i]);
+
+            var offerprice =
+                hotel[i].rr -
+                ((hotel[i].discount / 100) * hotel[i].rr);
+
+            document.write(
+                "Name: " + v1.name + "<br>",
+                "Location: " + v1.location + "<br>",
+                "Room Rate: ₹ " + v1.rr + "<br>",
+                "Discount: " + v1.discount + "%" + "<br>",
+                "OFFER PRICE: ₹ " + offerprice + "<br><br><br>"
+            );
+        }
+    </script>
+</body>
+</html>

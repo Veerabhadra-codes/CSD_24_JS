@@ -1,0 +1,24 @@
+<script src="jquery-3.7.1.min.js"></script>
+
+<html>
+<body>
+    <p>TajMahal is very Beauiful</p>
+
+    <script>
+        $('p').each(function() {
+            var pdata = $(this);
+
+            pdata.html(
+                pdata.text().replace(
+                    /(^\w+)/,
+                    '<strong>$1</strong>'
+                )
+            );
+        });
+
+        $(document).ready(function() {
+            $('p').css('text-decoration', 'underline');
+        });
+    </script>
+</body>
+</html>

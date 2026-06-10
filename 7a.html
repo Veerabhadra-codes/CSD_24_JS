@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Disable or Enable an Form with jQuery</title>
+<style>
+    label {
+        display: black;
+        margin: 10px 0;
+    }
+</style>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('form input[type="submit"]').prop("disabled", true);
+        $(".agree").click(function(){
+            if($(this).prop("checked") == true){
+                $('form input[type="submit"]').prop("disabled", false);
+            }
+            else if($(this).prop("checked") == false){
+                $('form input[type="submit"]').prop("disabled", true);
+            }
+        });
+    });
+$(document).bind("contextmenu",function(e){
+alert('right click disabled');
+  return false;
+    });
+</script>
+</head>
+<body>
+    <form>
+        <label>Name: <input type="text" name="username"></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label><input type="checkbox" class="agree"> I agree to terms and conditions.</label><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

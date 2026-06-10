@@ -1,0 +1,29 @@
+<html>
+<body>
+    <script>
+        var arr = [2, 4, 1, 8, 5];
+
+        var result = arr.sort(function compare(a, b) {
+            return b - a;
+        });
+
+        document.write("Descending order");
+        document.write("<br/>");
+        document.write(result);
+        document.write("<br>");
+    </script>
+
+    <script>
+        var arr = [10, 5, 1, 9, 3];
+
+        var result = arr.sort(function compare(a, b) {
+            return a - b;
+        });
+
+        document.write("Ascending order");
+        document.write("<br/>");
+        document.write(result);
+        document.write("<br>");
+    </script>
+</body>
+</html>

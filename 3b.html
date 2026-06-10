@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body style="text-align:center">
+    <h1>Click the button to invoke the Confirm Message</h1>
+
+    <button onclick="myFunction()">
+        <h2>CLICK HERE</h2>
+    </button>
+
+    <h2>
+        <p id="conf"></p>
+    </h2>
+
+    <script>
+        function myFunction()
+        {
+            if (window.confirm("Do you really want to delete?\n Deletion can not be reverted if you confirm!"))
+            {
+                document.getElementById("conf").innerHTML =
+                    "you have successfully deleted the file";
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        p {
+            color: green;
+        }
+
+        h1 {
+            color: purple;
+        }
+    </style>
+</body>
+</html>

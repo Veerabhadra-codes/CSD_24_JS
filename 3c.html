@@ -1,0 +1,45 @@
+<html>
+    <h1>PROMPT MESSAGE</h1>
+    <br><br>
+
+    <body style="text-align:center">
+        <button onclick="fun()">
+            <h2>CLICK ME!</h2>
+        </button>
+
+        <h2>
+            <p id="g"></p>
+        </h2>
+
+        <script type="text/javascript">
+            function fun()
+            {
+                let string = prompt('Enter a string: ');
+
+                if(string != null)
+                {
+                    document.getElementById("g").innerHTML =
+                        "WELCOME TO " + string;
+                }
+            }
+        </script>
+
+        <style>
+            body {
+                background-color: pink;
+            }
+
+            p {
+                color: blue;
+            }
+
+            h1 {
+                color: brown;
+            }
+
+            h2 {
+                color: green;
+            }
+        </style>
+    </body>
+</html>

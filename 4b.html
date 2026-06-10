@@ -1,0 +1,36 @@
+<html>
+<body>
+    <style>
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:active {
+            color: blue;
+        }
+    </style>
+
+    <h2>styling a link depending on state</h2>
+
+    <p>
+        <b>
+            <a href="1a.html" target="_blank">  This is a link </a>
+        </b>
+    </p>
+
+    <script>
+        const parentDom = document.getElementById("parent");
+        const high = parentDom.getElementByIdClassName("high")[0];
+
+        document.write(high);
+    </script>
+</body>
+</html>
